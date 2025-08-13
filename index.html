@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Força - CPE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img class="logotipocme" src="assets/cpe.png" alt="Logotipo CPE">
+            <h1>Mapa de Força - CPE</h1>
+            <h3>Comando de Policiamento Especializado</h3>
+            <p id="data"></p>
+            <p>Escolha a sua UPM:</p>
+
+            <div class="unit">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeW03X4hDvun05osTwxD1P2zu2dOaqmVa84BgOoaD8Nm0mjKw/viewform?usp=dialog">
+                    <img class="logotipo" src="assets/bptur.png" alt="Logotipo BPTUR">
+                </a>
+                <p>BPTUR</p>
+            </div>
+
+            <div class="unit">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVCPtq_gfpYA3YPyoxitLf3Q3Squmf7bBhAjCQePsLNHlKaQ/viewform?usp=dialog">
+                    <img class="logotipo" src="assets/2bptur.png" alt="Logotipo 2º BPTUR">
+                </a>
+                <p>2ª BPTUR</p>
+            </div>
+
+            <div class="unit">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSethIh6Ml2uWnLdRL35IQM5cl4JdoNV0kfxjydCbaxrG-wUGQ/viewform?usp=dialog">
+                    <img class="logotipo" src="assets/bprv.png" alt="Logotipo BPRV">
+                </a>
+                <p>BPRV</p>
+            </div>
+
+            <div class="unit">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzythWfN-aQxRal4fBxFbHZ83Ch4pJkLoGRiXHw_PHk7Sgjg/viewform?usp=dialog">
+                    <img class="logotipo" src="assets/bpa.png" alt="Logotipo BPA">
+                </a>
+                <p>BPA</p>
+            </div>
+
+            <div class="unit">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtj6G1ffMLGLvD1RcsNN2t8K1ywFEHmKvM2nvRwJgeIdlMFQ/viewform?usp=dialog">
+                    <img class="logotipo" src="assets/bmt.png" alt="Logotipo BMT">
+                </a>
+                <p>BMT</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const data = document.getElementById('data');
+        const dataAtual = new Date();
+        const dia = dataAtual.getDate();
+        const mes = dataAtual.getMonth() + 1;
+        const ano = dataAtual.getFullYear();
+
+        const meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 
+                    'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+
+        data.innerHTML = `${dia} de ${meses[mes-1]} de ${ano}`;
+    </script>
+</body>
+</html>
